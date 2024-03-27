@@ -12,6 +12,11 @@ comment after the code.
 '''
 PROBLEM 0. Put your name and assignment information here.
 '''
+"""
+Saishree Ramkumar 
+CS 100 Room CKB 207
+HW 6 26 March 2024 9:00 pm est
+"""
 
 # The Bells
 # Edgar Allen Poe
@@ -206,25 +211,36 @@ def litCricFriend(wordList, text):
     occurs, divided by the number of words in the text. A word
     occurrence is the whole word, regardless of case, and
     excluding punctuation.'''
-
+    
     # PROBLEM 1. Write a string method call that lower cases all
     # of the characters in text. One line of code. Hint: assign the
     # lower-cased text to a new variable name.
+    Problem1output = wordList[(wordList.find(text)): wordList.find(text)+len(text)].lower()
+    print("Problem 1 Solution: " + Problem1output)
 
     # PROBLEM 2. Write a string method call that replaces every
     # m-dash ('--') in the lower-cased text with a space (' '). 
     # One line of code.
+    Problem2output = Problem1output.replace('--', ' ')
+    print("Problem 2 Solution: " + Problem2output)
     
     # PROBLEM 3. Write a string method call that splits text into a
     # list of words (after they have been lower-cased, and the
     # m-dashes removed). One line of code.
+    
+    Problem3output = Problem2output.split()
+    print("Problem 3 Solution: " + str(Problem3output))
+    
 
     # PROBLEM 4. Write a loop that creates a new word list, using a
     # string method to strip the words from the list created in Problem 3
     # of all leading and trailing punctuation. Hint: the string library,
     # which is imported above, contains a constant named punctuation.
     # Three lines of code.
-
+    for items in Problem3output:
+        Problem4Output = items.strip(string.punctuation)
+        print("Problem 4 Output: " + Problem4Output)
+    
     # PROBLEM 5. Write a loop that sums the number of times that the
     # words in wordList occur in the list from Problem 4. Hint 1: you
     # can use a list method to do the counting. Hint 2: lower case the
@@ -249,7 +265,13 @@ def litCricFriend(wordList, text):
 # differently? Do the results show that Poe and Neruda use 'the'
 # differently?
 
+
 '''
 Put your answer to PROBLEM 8 here.
 '''
+
+
+
+litCricFriend(theBells, "And the people--ah, the people,")
+
 
