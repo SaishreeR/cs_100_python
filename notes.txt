@@ -1,0 +1,17 @@
+	# python_lecture02
+Exercises for Lists &amp; Tuples
+step 1: clone the git hub project
+git clone https://github.com/SaishreeR/python_lecture02.git
+step 1a
+cd "folder name"
+step 2: adding the files
+git status (look for red letters which means the files are not pushed to git hub)
+git add .
+step 3: committing the files
+git commit -m "add comments"
+step 4: push the files
+git push
+
+
+ls list of folders
+pwd current directory
