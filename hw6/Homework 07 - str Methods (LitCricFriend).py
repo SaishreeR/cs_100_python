@@ -246,6 +246,20 @@ def litCricFriend(wordList, text):
     # can use a list method to do the counting. Hint 2: lower case the
     # words in wordList. Between three and five lines of code. (It
     # depends on your coding style -- various styles are OK.)
+    counter = 0
+    for items in Problem3output:
+        Problem4Output = items.strip(string.punctuation)
+        #print("Problem 4 Output: " + Problem4Output)
+        wordList = wordList.lower()
+        Problem5Output = wordList.find(Problem4Output)
+        
+        print("Output: " + str(Problem5Output))
+        if Problem5Output != -1:
+            counter = counter + 1
+    print(counter)    
+        
+        #for wlItem in wordList:
+            #print(wlItem)
 
     # PROBLEM 6. Calculate the ratio of the number from Problem 5
     # to the number of words in text. Return this ratio. Between one
